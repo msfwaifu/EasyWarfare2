@@ -156,12 +156,18 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="ESP.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="hook.cpp" />
+    <ClCompile Include="iw4mp.cpp" />
     <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ESP.h" />
-    <ClInclude Include="Structs.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="hook.h" />
+    <ClInclude Include="iw4mp.h" />
+    <ClInclude Include="offsets.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="types.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,20 +2,6 @@
 
 typedef float vec3_t[3];
 
-#define CGS_ADDR	 0x89D3A0
-#define CG_ADDR		 0x8A0E50
-#define ENTITY_ADDR  0x9A4090
-#define ENTITY_SIZE  0x204
-#define MAX_ENTITIES 2048
-#define REFDEF_ADDR  0x90B5C8
-#define CLIENT_ADDR  0x99785C
-#define CLIENT_SIZE  0x52C
-
-#define RENDERSCENE_ADDR 0x0059AAF0
-#define APPLYRECT_ADDR	 0x004DF2D0 // Untested
-#define GETFONT_ADDR	 0x0040f6d0
-#define DRAWTEXT_ADDR	 0x004113D0
-
 #define FONT_SMALL_DEV    "fonts/smallDevFont"
 #define FONT_BIG_DEV      "fonts/bigDevFont"
 #define FONT_CONSOLE      "fonts/consoleFont"
@@ -136,6 +122,7 @@ typedef struct  {
 } refdef_t; 
 
 typedef struct {
+	__int32 unknown;
 	__int32 IsValid; //0x0000 
 	__int32 IsValid2; //0x0004 
 	__int32 clientNum; //0x0008 
