@@ -40,8 +40,6 @@ void CGame::DrawESP(RGBA_COLOR_t *Color, bool distance, bool name, bool box)
 					if (name) {
 						char strName[16];
 						snprintf(strName, 16, "%s", clientInfo[cg_entities[i]->clientNum]->szName);
-						if(clientInfo[cg_entities[i]->clientNum] == 0)
-							printf(strName);
 						iw4mp->DrawTextWrapper(fScreenX - (sizeof(clientInfo[cg_entities[i]->clientNum]->szName) / 2), fScreenY + 10, Color, strName);
 					}
 					if (box) {
