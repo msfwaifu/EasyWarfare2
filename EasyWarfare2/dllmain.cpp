@@ -9,11 +9,6 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 					 )
 {
 	if (ul_reason_for_call == DLL_PROCESS_ATTACH) {
-		AllocConsole();
-		freopen("CONIN$", "r", stdin);
-		freopen("CONOUT$", "w", stdout);
-		freopen("CONOUT$", "w", stderr);
-
 		cgame = new CGame();
 		iw4mp = new Iw4mp();
 	}
