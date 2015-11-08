@@ -16,6 +16,7 @@ void Iw4mp::DrawTextWrapper(float x, float y, RGBA_COLOR_t* Color, const char* T
 	this->DrawEngineText((char*)Text, 0x7FFFFFFF, Font, x, y, 1.0f, 1.0f, 0.0f, Color, 0);
 
 }
+
 void Iw4mp::InitHook()
 {
 	this->RE_RenderScene = (tRenderScene)DetourFunction((PBYTE)RENDERSCENE_ADDR, (PBYTE)nRE_RenderScene);
